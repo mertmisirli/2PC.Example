@@ -2,9 +2,11 @@
 
 namespace Coordinator.Models
 {
-    public record NodeState(Guid TransactionId)
+    public record NodeState()
     {
         public Guid Id { get; set; }
+
+        public Guid TransactionId { get; set; }
 
         public ReadyType IsReady { get; set; }
 
